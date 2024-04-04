@@ -4,18 +4,163 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>My Presentation</title>
-
+  <title>Architect & Agile</title>
   <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css">
+  <link rel="stylesheet" href="custom.css">
 </head>
 
 <body>
   <div class="reveal">
     <div class="slides">
-      <section>Slide 1</section>
-      <section>Slide 2</section>
-      <section>Slide 3</section>
+      <section>
+        <section>
+          Agility
+          <p>
+            Change is the essence of life;<br>
+          </p>
+          <p class="fragment">be willing to surrender what you are for what you could become.</p>
+          <small>Reinhold Niebuhr*</small>
+        </section>
+        <section>
+          Software Architecture
+          <p>Architecture refers to the overall structure and organization of a software system. It defines the
+            components, relationships, and interactions between them, as well as the principles and guidelines for
+            designing and building the system.</p>
+          <small>Software Architecture in Practice, Len Bass, Paul Clements, Rick Kazman</small>
+          <small class="fragment">(12.1997)</small>
+        </section>
+      </section>
+      <section>
+        <section>
+          <p>Agile Manifesto</p>
+          <small class="fragment">(02.2001)</small>
+          <ul>
+            <li>
+              <span>Individuals and interactions</span> <small>over</small> processes and tools
+            </li>
+            <li><span>Working software</span> <small>over</small> comprehensive documentation</li>
+            <li><span>Customer collaboration</span> <small>over</small> contract negotiation</li>
+            <li><span>Responding to change</span> <small>over</small> following a plan</li>
+          </ul>
+        </section>
+        <section>
+          <p>Agile Principles</p>
+          <small>(02.2001)</small>
+          <ul>
+            <li>The best architectures, requirements, and designs emerge from self-organizing teams.</li>
+          </ul>
+        </section>
+        <section>
+          <p>Architecture is the decisions that you wish you could get right early* in a project.</p>
+          <small class="fragment">*things that people perceive as hard to change.</small>
+          <small>Grady Booch</small>
+        </section>
+        <section>
+          <p>Agile is a shift that seeks to contain complexity by reducing irreversibility.
+            One of an architect's most important tasks is to <b class="primary-color">remove
+              architecture</b> by finding ways to eliminate irreversibility in software designs</p>
+          <small>Martin Fowler</small>
+        </section>
+        <section>
+          <p>
+            <iframe width="1132" height="637" src="https://www.youtube.com/embed/Bez7wmAsxjE"
+              title="The Agile Paradoxon" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </p>
+        </section>
+        <section>
+          <ul>
+            <li>
+              Individuals and interactions <small>over</small> <span> processes and tools </span>
+            </li>
+            <li>Working software <small>over</small> <span>comprehensive documentation</span></li>
+            <li>Customer collaboration <small>over</small> <span>contract negotiation</span></li>
+            <li>Responding to change <small>over</small> <span>following a plan</span></li>
+          </ul>
+          <p class="fragment">Scaling enablers</p>
+        </section>
+        <section>
+          <a href="https://scaledagileframework.com/architectural-runway/" target="_blank">Safe Architectural Runway</a>
+          <img src="https://scaledagileframework.com/wp-content/uploads/2023/02/Agile_Architecture_F01-1.svg">
+        </section>
+        <section>
+          <a href="https://www.linkedin.com/pulse/architectural-runway-safe-agile-landings-har-gootzen/"
+            target="_blank">The Architectural Runway for SAFe Agile Landings</a>
+          <div class="r-stack">
+            <img class="fragment fade-in-then-out"
+              src="https://media.licdn.com/dms/image/C5612AQHeFkd6EVSKow/article-cover_image-shrink_720_1280/0/1520111332409?e=1717632000&v=beta&t=Pvkfnrx-TdBVczuFtgS0aMA_pKRn2ykb5EWMjeMiBYs">
+            <img class="fragment"
+              src="https://media.licdn.com/dms/image/C4E12AQGsOgSGkwgquQ/article-inline_image-shrink_1000_1488/0/1520632588164?e=1717632000&v=beta&t=sCybghOLVV42K08WMDRLuI1AnkTRXVwtIPUfB2_j8GA">
+          </div>
+        </section>
+      </section>
+      <section>
+        <section>
+          <p>Agile Architecture</p>
+          Set of values and practices that <span>support the active
+            evolution of the design and
+            architecture</span> of a system while implementing new features, enhancing existing ones, or refactoring the
+          system
+          to meet new requirements.
+          <p><small>James Coplien, Gertrud Bjørnvig <span class="fragment">(07.2010)</span></small></p>
+        </section>
+        <section>
+          <p>Techniques</p>
+          <ul>
+            <li>Documentation as Code</li>
+            <li>Walking Skeleton as Architectural Reference</li>
+            <li>Devops Guardrails</li>
+            <li>Low Code for Rapid Evaluation of Architecture Alternatives</li>
+            <li>Technology Radar</li>
+          </ul>
+        </section>
+        <section>
+          <p>Style: Evolutionary Architecture</p>
+          <p>Architecture that supports guided, incremental change across multiple dimensions.</p>
+          <small>Neal Ford, Rebecca Parsons, Patrick Kua <span class="fragment">(11.2017)</span></small>
+        </section>
+        <section>
+          <p>Style: Evolutionary Architecture</p>
+          <small>
+            <ul>
+              <li><span>Guided:</span> Architecture that provides a path for incremental change in which the
+                architecture itself
+                changes
+                over time.</li>
+              <li><span>Incremental:</span> Architecture that evolves in small steps, with each step providing concrete
+                value and
+                validation of the architecture.</li>
+              <li><span>Multiple dimensions:</span> Architecture that considers the quality attributes of a system, such
+                as
+                performance,
+                security, and maintainability, as well as the business goals and constraints of the system.</li>
+            </ul>
+          </small>
+        </section>
+        <section>
+          <a href="https://www.amazon.com/Evolutionary-Architecture-Guided-Change-Constraints/dp/1492097543"
+            target="_blank">
+            <img src="https://m.media-amazon.com/images/I/91Dy1gRA-qL._AC_UF894,1000_QL80_.jpg"
+              alt="Evolutionary Architecture Book Cover">
+          </a>
+        </section>
+      </section>
+      <section>
+        <section>
+          <p>The Serenity Prayer</p>
+          <blockquote>
+            <p>God, grant me the serenity to accept the things I cannot change,<br>
+              courage to change the things I can,<br>
+              and wisdom to know the difference.</p>
+          </blockquote>
+          <small class="fragment">Reinhold Niebuhr*
+            <span class="fragment secondary-color">The prayer became more widely known after being brought to the
+              attention of AA* groups</span></small>
+          <small class="fragment">*Agile Architects?</small>
+        </section>
+      </section>
     </div>
   </div>
 

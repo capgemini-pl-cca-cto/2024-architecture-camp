@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #FF5722;
+  --secondary-color: #42AFFA;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.reveal .slides section {
+  color: var(--primary-color);
+}
+
+.reveal .slides section p,
+.reveal .slides section span {
+  color: var(--secondary-color);
+}

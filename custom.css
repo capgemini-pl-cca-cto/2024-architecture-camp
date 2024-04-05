@@ -1,6 +1,7 @@
 :root {
   --primary-color: #ff5722;
   --secondary-color: #42affa;
+  --tertiary-color: #f1f1f1;
 }
 
 .primary-color {
@@ -11,6 +12,10 @@
   color: var(--secondary-color) !important;
 }
 
+.tertiary-color {
+  color: var(--tertiary-color) !important;
+}
+
 .reveal .slides section {
   color: var(--primary-color);
 }
@@ -18,6 +23,10 @@
 .reveal .slides section p,
 .reveal .slides section span {
   color: var(--secondary-color);
+}
+
+.reveal .slides section small {
+  color: var(--tertiary-color);
 }
 
 .container {
@@ -32,6 +41,7 @@
   writing-mode: vertical-lr;
   text-orientation: upright;
   text-align: left;
+  padding: 0.25em;
 }
 
 .card-content {
